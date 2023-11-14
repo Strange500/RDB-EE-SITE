@@ -1,9 +1,27 @@
-.form+div {
+.caracteristique_container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 24%);
     grid-template-rows: 1fr;
-    grid-column-gap: 20px;
+    grid-column-gap: 1%;
     grid-row-gap: 0px;
-    }
-    
-    
+}
+.distance_container{
+    padding: 10px;
+    text-align: center;
+    border : solid black 1px;
+}
+.permit_container{
+    padding: 10px;
+    text-align: center;
+    border : solid black 1px;
+}
+.date_container{
+    padding: 10px;
+    text-align: center;
+    border : solid black 1px;
+}
+.depart_container{
+    padding: 10px;
+    text-align: center;
+    border : solid black 1px;   
+}
