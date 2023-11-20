@@ -32,8 +32,24 @@
     object-fit: cover;
 }
 
-.logo {
-    width: 10%;
-    height: 10%;
-    object-fit: cover;
-}
+datalist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    writing-mode: vertical-lr;
+    width: 200px;
+    padding-left: 120px;
+    font-size: 10px;
+    
+    
+  }
+  
+  option {
+    padding: 0;
+  }
+  
+  input[type="range"] {
+    width: 200px;
+    margin: 0;
+  }
+  

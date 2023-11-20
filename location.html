@@ -5,15 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>location</title>
     <link rel="stylesheet" href="css/location.css">
+    <link rel="stylesheet" href="css/menue.css">
 </head>
 <body>
     <nav>
-        <li><a href="#"><img src="img/Air-Liquide-logo.png" alt="" class="logo"></a></li>
-        <li><a href="#">truc1</a></li>
-        <li><a href="#">truc2</a></li>
-        <li><a href="#">truc3</a></li>
-        <li><a href="#">truc2</a></li>
-        <li><a href="#">truc2</a></li>
+        <li><a href="https://www.airliquide.com/fr"><img src="img/Air-Liquide-logo.png" alt="logo" class="logo"></a></li>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="location.html">Locations</a></li>
     </nav>
 
     <div class="main">
@@ -21,8 +19,17 @@
 
             <div class="caracteristique_container">
                 <div class="distance_container">
-                    <label for="distance">Distance à parcourir</label>
-                    <input type="range" name="distance" id="distance">
+                    <label for="distance">Distance à parcourir</label><br>
+                    <input type="range" name="distance" id="distance" min="0" max="100" step="33" list="values">
+
+
+                    <datalist id="values">
+                        <option value="0" label="-5km"></option>
+                        <option value="33" label="&lt;10km"></option>
+                        <option value="66" label="&lt;15km"></option>
+                        <option value="100" label="+15km"></option>
+                    </datalist>
+
                 </div>
 
                 <div class="permit_container">
@@ -68,17 +75,17 @@
 
             <div class="voiture_elec_container">
                 <div class="item_container">
-                    <img src="#" alt="voit1" class="item_img">
+                    <img src="img/voit1-min.jpg" alt="voit1" class="item_img">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat culpa, asperiores unde totam explicabo doloremque. Iure quasi quod, debitis ullam voluptas eum temporibus nisi, facilis architecto, maiores totam ea pariatur.</p>
                     <input type="radio" name="choice" value="4">
                 </div>
                 <div class="item_container">
-                    <img src="#" alt="voit2" class="item_img">
+                    <img src="img/voit2-min.jpg" alt="voit2" class="item_img">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat culpa, asperiores unde totam explicabo doloremque. Iure quasi quod, debitis ullam voluptas eum temporibus nisi, facilis architecto, maiores totam ea pariatur.</p>
                     <input type="radio" name="choice" value="5">
                 </div>
                 <div class="item_container">
-                    <img src="#" alt="voit3" class="item_img">
+                    <img src="img/voit3-min.jpg" alt="voit3" class="item_img">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat culpa, asperiores unde totam explicabo doloremque. Iure quasi quod, debitis ullam voluptas eum temporibus nisi, facilis architecto, maiores totam ea pariatur.</p>
                     <input type="radio" name="choice" value="6">
                 </div>
@@ -86,17 +93,17 @@
 
             <div class="voiture_hydro_container">
                 <div class="item_container">
-                    <img src="#" alt="voithyd1" class="item_img">
+                    <img src="img/voithyd1.jpg" alt="voithyd1" class="item_img">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat culpa, asperiores unde totam explicabo doloremque. Iure quasi quod, debitis ullam voluptas eum temporibus nisi, facilis architecto, maiores totam ea pariatur.</p>
                     <input type="radio" name="choice" value="7">
                 </div>
                 <div class="item_container">
-                    <img src="#" alt="voithyd2" class="item_img">
+                    <img src="img/voithyd2.jpg" alt="voithyd2" class="item_img">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat culpa, asperiores unde totam explicabo doloremque. Iure quasi quod, debitis ullam voluptas eum temporibus nisi, facilis architecto, maiores totam ea pariatur.</p>
                     <input type="radio" name="choice" value="8">
                 </div>
                 <div class="item_container">
-                    <img src="#" alt="voithyd4" class="item_img">
+                    <img src="img/voithyd3.jpg" alt="voithyd4" class="item_img">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat culpa, asperiores unde totam explicabo doloremque. Iure quasi quod, debitis ullam voluptas eum temporibus nisi, facilis architecto, maiores totam ea pariatur.</p>
                     <input type="radio" name="choice" value="9">
                 </div>
@@ -104,17 +111,17 @@
 
             <div class="velo_container">
                 <div class="item_container">
-                    <img src="#" alt="velo1" class="item_img">
+                    <img src="img/velo1.jpg" alt="velo1" class="item_img">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat culpa, asperiores unde totam explicabo doloremque. Iure quasi quod, debitis ullam voluptas eum temporibus nisi, facilis architecto, maiores totam ea pariatur.</p>
                     <input type="radio" name="choice" value="10">
                 </div>
-                <div class="item_container" class="item_img">
-                    <img src="#" alt="velo2">
+                <div class="item_container" >
+                    <img src="img/velo2.jpg" alt="velo2" class="item_img">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat culpa, asperiores unde totam explicabo doloremque. Iure quasi quod, debitis ullam voluptas eum temporibus nisi, facilis architecto, maiores totam ea pariatur.</p>
                     <input type="radio" name="choice" value="11">
                 </div>
                 <div class="item_container">
-                    <img src="#" alt="velo3" class="item_img">
+                    <img src="img/velo3.jpg" alt="velo3" class="item_img">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat culpa, asperiores unde totam explicabo doloremque. Iure quasi quod, debitis ullam voluptas eum temporibus nisi, facilis architecto, maiores totam ea pariatur.</p>
                     <input type="radio" name="choice" value="12">
                 </div>
