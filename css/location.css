@@ -25,3 +25,15 @@
     text-align: center;
     border : solid black 1px;   
 }
+
+.item_img {
+    width: 10%;
+    height: 10%;
+    object-fit: cover;
+}
+
+.logo {
+    width: 10%;
+    height: 10%;
+    object-fit: cover;
+}
