@@ -1,32 +1,87 @@
 
+form{
+    display: grid;
+    grid-template-columns: 15% 1fr 15%;
+    grid-template-rows: auto repeat(5, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px; 
+    grid-template-areas: ". caracteristique ."
+                         ". trotinette ."
+                         ". voiture_elec ."
+                         ". voiture_hydro ."
+                         ". velo .";
+}
 .caracteristique_container {
     display: grid;
     grid-template-columns: repeat(4, 24%);
     grid-template-rows: 1fr;
     grid-column-gap: 1%;
     grid-row-gap: 0px;
+    grid-area: caracteristique;
 }
 .distance_container{
     padding: 10px;
     text-align: center;
     border : solid black 1px;
+    align-items: center;
+    justify-content: space-between;
 }
 .permit_container{
     padding: 10px;
     text-align: center;
     border : solid black 1px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
 }
 .date_container{
     padding: 10px;
     text-align: center;
     border : solid black 1px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
 }
 .depart_container{
     padding: 10px;
     text-align: center;
     border : solid black 1px;   
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
 }
-
+.trotinette_container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 30px;
+    border : solid black 1px;
+    grid-area: trotinette;
+}
+.voiture_elec_container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 30px;
+    border : solid black 1px;
+    grid-area: voiture_elec;
+}
+.voiture_hydro_container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 30px;
+    border : solid black 1px;
+    grid-area: voiture_hydro;
+}
+.velo_container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 30px;
+    border : solid black 1px;
+    grid-area: velo;
+}
 .item_img {
     width: 10%;
     height: 10%;
@@ -40,13 +95,23 @@ datalist {
     width: 200px;
     padding-left: 120px;
     font-size: 10px;
-  }
-  option {
+}
+option {
     padding: 0;
-  }
+}
   
-  input[type="range"] {
+input[type="range"] {
     width: 200px;
     margin: 0;
-  }
+}
   
+.item_container>img{
+    width: 30%;
+    height: 30%;
+}
+.item_container{
+    text-align: center;  
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
