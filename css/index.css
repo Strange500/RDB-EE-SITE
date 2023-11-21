@@ -1,6 +1,47 @@
 form {
-    width: 300px;
-    padding: 1em;
-    border: 1px solid #CCC;
-    border-radius: 1em;
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f6f6f6;
+    border-radius: 30px;
+    border-style: solid;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"], form input[type="radio"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+
+form input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.bold {
+    font-weight: bold;font-size: large;
 }
