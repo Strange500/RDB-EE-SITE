@@ -127,6 +127,7 @@ input[type="range"] {
 .item_container>img{
     width: 35%;
     height: 35%;
+    border-radius: 20px;
 }
 .item_container{
     text-align: center;  
