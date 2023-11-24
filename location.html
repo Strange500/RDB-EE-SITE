@@ -23,15 +23,12 @@
                 <div class="distance_container">
                     <label for="distance">Distance à parcourir</label><br>
                     <input type="range" name="distance" id="distance" min="0" max="100" step="33" list="values">
-
-
                     <datalist id="values">
                         <option value="0" label="-5km"></option>
                         <option value="33" label="&lt;10km"></option>
                         <option value="66" label="&lt;15km"></option>
                         <option value="100" label="+15km"></option>
                     </datalist>
-
                 </div>
 
                 <div class="permit_container">
@@ -48,87 +45,85 @@
 
                 <div class="depart_container">
                     <label for="depart">Quelle ville ?</label>
-                    <input type="text" name="depart" id="depart">
+                    <input type="text" name="depart" id="depart" required>
                 </div>
 
-                <div class="submit_container">
-                    <input type="submit" value="Louer!">
-                </div>
+                
 
             </div>
             
             <div class="trotinette_container">
                 <div class="item_container">
+                    <input type="radio" name="choice" value="1" required>
                     <img src="img/trot1-min.jpg" alt="Trot1" class="item_img">
-                    <p>Trotinette Lime</p>
-                    <input type="radio" name="choice" value="1">
+                    <p>trotinette1</p>
                 </div>
                 <div class="item_container">
-                    <img src="img/trot2-min.jpg" alt="Trot2" class="item_img">
-                    <p>Trotinette 2000</p>
                     <input type="radio" name="choice" value="2">
-                </div>
+                    <img src="img/trot2-min.jpg" alt="Trot2" class="item_img">
+                    <p>trotinette2</p>                </div>
                 <div class="item_container">
-                    <img src="img/trot3-min.jpg" alt="Trot3" class="item_img">
-                    <p></p>
                     <input type="radio" name="choice" value="3">
-                </div>
+                    <img src="img/trot3-min.jpg" alt="Trot3" class="item_img">
+                    <p>trotinette3</p>                </div>
             </div>
 
             <div class="voiture_elec_container">
                 <div class="item_container">
-                    <img src="img/voit1-min.jpg" alt="voit1" class="item_img">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat culpa, asperiores unde totam explicabo doloremque. Iure quasi quod, debitis ullam voluptas eum temporibus nisi, facilis architecto, maiores totam ea pariatur.</p>
                     <input type="radio" name="choice" value="4">
+                    <img src="img/voit1-min.jpg" alt="voit1" class="item_img">
+                    <p>voiture_elec1</p>
                 </div>
                 <div class="item_container">
-                    <img src="img/voit2-min.jpg" alt="voit2" class="item_img">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat culpa, asperiores unde totam explicabo doloremque. Iure quasi quod, debitis ullam voluptas eum temporibus nisi, facilis architecto, maiores totam ea pariatur.</p>
                     <input type="radio" name="choice" value="5">
+                    <img src="img/voit2-min.jpg" alt="voit2" class="item_img">
+                    <p>voiture_elec2</p>                    
                 </div>
                 <div class="item_container">
-                    <img src="img/voit3-min.jpg" alt="voit3" class="item_img">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat culpa, asperiores unde totam explicabo doloremque. Iure quasi quod, debitis ullam voluptas eum temporibus nisi, facilis architecto, maiores totam ea pariatur.</p>
                     <input type="radio" name="choice" value="6">
+                    <img src="img/voit3-min.jpg" alt="voit3" class="item_img">
+                    <p>voiture_elec3</p>                    
                 </div>
             </div>
 
             <div class="voiture_hydro_container">
                 <div class="item_container">
-                    <img src="img/voithyd1.jpg" alt="voithyd1" class="item_img">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat culpa, asperiores unde totam explicabo doloremque. Iure quasi quod, debitis ullam voluptas eum temporibus nisi, facilis architecto, maiores totam ea pariatur.</p>
                     <input type="radio" name="choice" value="7">
+                    <img src="img/voithyd1.jpg" alt="voithyd1" class="item_img">
+                    <p>voiture_hydro1</p>                    
                 </div>
                 <div class="item_container">
-                    <img src="img/voithyd2.jpg" alt="voithyd2" class="item_img">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat culpa, asperiores unde totam explicabo doloremque. Iure quasi quod, debitis ullam voluptas eum temporibus nisi, facilis architecto, maiores totam ea pariatur.</p>
                     <input type="radio" name="choice" value="8">
+                    <img src="img/voithyd2.jpg" alt="voithyd2" class="item_img">
+                    <p>voiture_hydro2</p>                    
                 </div>
                 <div class="item_container">
-                    <img src="img/voithyd3.jpg" alt="voithyd4" class="item_img">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat culpa, asperiores unde totam explicabo doloremque. Iure quasi quod, debitis ullam voluptas eum temporibus nisi, facilis architecto, maiores totam ea pariatur.</p>
                     <input type="radio" name="choice" value="9">
+                    <img src="img/voithyd3.jpg" alt="voithyd4" class="item_img">
+                    <p>voiture_hydro3</p>                    
                 </div>
             </div>
 
             <div class="velo_container">
                 <div class="item_container">
-                    <img src="img/velo1.jpg" alt="velo1" class="item_img">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat culpa, asperiores unde totam explicabo doloremque. Iure quasi quod, debitis ullam voluptas eum temporibus nisi, facilis architecto, maiores totam ea pariatur.</p>
                     <input type="radio" name="choice" value="10">
+                    <img src="img/velo1.jpg" alt="velo1" class="item_img">
+                    <p>velo1</p>                    
                 </div>
                 <div class="item_container" >
-                    <img src="img/velo2.jpg" alt="velo2" class="item_img">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat culpa, asperiores unde totam explicabo doloremque. Iure quasi quod, debitis ullam voluptas eum temporibus nisi, facilis architecto, maiores totam ea pariatur.</p>
                     <input type="radio" name="choice" value="11">
+                    <img src="img/velo2.jpg" alt="velo2" class="item_img">
+                    <p>velo2</p>                    
                 </div>
                 <div class="item_container">
-                    <img src="img/velo3.jpg" alt="velo3" class="item_img">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat culpa, asperiores unde totam explicabo doloremque. Iure quasi quod, debitis ullam voluptas eum temporibus nisi, facilis architecto, maiores totam ea pariatur.</p>
                     <input type="radio" name="choice" value="12">
+                    <img src="img/velo3.jpg" alt="velo3" class="item_img">
+                    <p>velo3</p>                    
                 </div>
             </div>
-
+            <div class="submit_container">
+                <input type="submit" value="Louer !">
+            </div>
         </form>
     </div>
     
