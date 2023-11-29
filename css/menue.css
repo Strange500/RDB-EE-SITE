@@ -7,6 +7,10 @@
     height: 30%;
     float: left;
 }
+
+nav {
+    background-color: background-color: rgba(226, 226, 226, 0.315);
+}
 nav>ul{
     position:absolute;
     top:0px;

@@ -16,11 +16,15 @@
         </ul>
     </nav>
 
+    <select name="test" id="test">
+        <option value="velo">velo</option>
+    </select>
+
     <div class="main">
         <form action="reusite.html">
 
             <div class="caracteristique_container">
-                <div class="distance_container">
+                <div class="distance_container container">
                     <label for="distance">Distance à parcourir</label><br>
                     <input type="range" name="distance" id="distance" min="0" max="100" step="33" list="values">
                     <datalist id="values">
@@ -31,28 +35,54 @@
                     </datalist>
                 </div>
 
-                <div class="permit_container">
+                <div class="permit_container container">
 
                     <label for="permit">Avez-vous le permis ?</label>
                     <input type="checkbox" name="permit" id="permit">
 
                 </div>
 
-                <div class="date_container">
+                <div class="date_container container">
                     <label for="date">A quelle date ?</label>
                     <input type="date" name="date" id="date">
                 </div>
 
-                <div class="depart_container">
+                <div class="depart_container container">
                     <label for="depart">Quelle ville ?</label>
-                    <input type="text" name="depart" id="depart" required>
+                    <input type="text" name="depart" id="depart" placeholder="Lille" required>
+                </div>
+
+                <div class="selection_container container">
+
+                    <div class="selection_trie_check_container">
+                        <label for="velo">Velo</label>
+                        <input type="checkbox" id="velo">
+                        
+                    </div>
+                    <div class="selection_trie_check_container">
+                        <label for="trot">Trotinette</label>
+                        <input type="checkbox" name="trot" id="trot">
+
+                    </div>
+                    
+                    <div class="selection_trie_check_container">
+                        <label for="voit-elec">Voiture Electrique</label>
+                        <input type="checkbox" name="voit-elec" id="voit-elec">
+                    </div>
+                    
+                    <div class="selection_trie_check_container">
+                        <label for="voit-hydro">Voiture hydrogene</label>
+                        <input type="checkbox" name="voit-hydro" id="voit-hydro">
+                    </div>
+                    
+
                 </div>
 
                 
 
             </div>
             
-            <div class="trotinette_container">
+            <div class="trotinette_container container">
                 <div class="item_container">
                     <input type="radio" name="choice" value="1" required>
                     <img src="img/trot1-min.jpg" alt="Trot1" class="item_img">
@@ -68,7 +98,7 @@
                     <p>trotinette3</p>                </div>
             </div>
 
-            <div class="voiture_elec_container">
+            <div class="voiture_elec_container container">
                 <div class="item_container">
                     <input type="radio" name="choice" value="4">
                     <img src="img/voit1-min.jpg" alt="voit1" class="item_img">
@@ -86,7 +116,7 @@
                 </div>
             </div>
 
-            <div class="voiture_hydro_container">
+            <div class="voiture_hydro_container container">
                 <div class="item_container">
                     <input type="radio" name="choice" value="7">
                     <img src="img/voithyd1.jpg" alt="voithyd1" class="item_img">
@@ -104,7 +134,7 @@
                 </div>
             </div>
 
-            <div class="velo_container">
+            <div class="velo_container container">
                 <div class="item_container">
                     <input type="radio" name="choice" value="10">
                     <img src="img/velo1.jpg" alt="velo1" class="item_img">
