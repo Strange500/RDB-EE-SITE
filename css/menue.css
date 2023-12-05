@@ -36,14 +36,13 @@ nav>ul>li>a{
     border: none;
     padding: 15px 32px;
 }
-nav>ul>li>a[href="index.html"]:hover,nav>ul>li>a[href="location.html"]:hover {
-    
+.menue_item:hover {
     background-color: white;
     color: #216CE7;
     transition: .2s;
 }
 
-nav>ul>li>a[href="index.html"],nav>ul>li>a[href="location.html"] {
+.menue_item {
     background-color: #216CE7;
     color: white;
     border: 1px solid #216CE7;
