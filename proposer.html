@@ -11,38 +11,56 @@
     <nav>
         <ul>
             <li><a href="https://www.airliquide.com/fr"><img src="img/Air-Liquide-logo.png" alt="logo" class="logo"></a></li>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="location.html">Location</a></li>
+            <li><a href="index.html" class="menue_item">Accueil</a></li>
+            <li><a href="location.html" class="menue_item" >Location</a></li>
+            <li><a href="proposer.html" class="menue_item" >Proposer</a></li>
+            <li><a href="login.html"><img src="img/account.png" alt="Account" class="logo"></a></li>
         </ul>
     </nav>
 
     <div class="main">
 
         <div class="prop_container">
-            <label for="mail">Email</label>
-            <input type="text" name="mail">
+            
+            <div class="calendar_container container">
+                <label for="calendar">Quelle date</label>
+                <input type="date" name="calendar" id="calendar">
+            </div>
+            
+            <div class="heure_container container">
+                <label for="heure">Quelle heure</label>
+                <input type="time" name="heure" id="heure">
+            </div>
+            
+            <div class="depart_container container">
+                <label for="depart">Quelle ville</label>
+                <input type="text" name="depart" id="depart">
+            </div>
+            
+            <div class="prix_container container">
+                <label for="prix">Quelle ville</label>
+                <input type="number" name="prix" id="prix" placeholder="Prix en €">
+            </div>
+            
+            <div class="type_container container">
+                <label for="type_vehicule">Type de vehicule</label>
+                <select name="type_vehicule" id="type_vehicule">
+                    <option value="trotinette">Trotinette</option>
+                    <option value="velo">Velo</option>
+                    <option value="voitureelec">Voiture Electrique</option>
+                    <option value="voiturehydro">Voiture Hydrogene</option>
+                </select>
+            </div>
 
-            <label for="calendar">Quelle date</label>
-            <input type="date" name="calendar" id="calendar">
-
-            <label for="calendar">Quelle heure</label>
-            <input type="time" name="heure" id="heure">
-
-            <label for="depart">Quelle ville</label>
-            <input type="text" name="depart" id="depart">
-
-            <label for="type_vehicule">Type de vehicule</label>
-            <select name="type_vehicule" id="type_vehicule">
-                <option value="trotinette">Trotinette</option>
-                <option value="velo">Velo</option>
-                <option value="voitureelec">Voiture Electrique</option>
-                <option value="voiturehydro">Voiture Hydrogene</option>
-            </select>
-
-            <label for="img_voiture">Une photo de votre vehicule</label>
-            <input type="file" name="img" id="img">
+            <div class="img_container container">
+                <label for="img_voiture">Une photo de votre vehicule</label>
+                <input type="file" name="img" id="img">
+            </div>
+            
 
         </div>
+
+        <small>veuillez a respecter les <a href="conditions.html">conditions d'utilisation</a> du site avant de proposer votre vehicule pour location</small>
         
         
 
