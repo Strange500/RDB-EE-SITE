@@ -42,3 +42,19 @@ input[type="submit"]:hover{
 .bold {
     font-weight: bold;font-size: large;
 }
+
+.presentation {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+h2.presentation {
+    padding-bottom: 30px;
+    font-size: 40px;
+}
+
+p.presentation {
+    padding-bottom: 50px;
+}
