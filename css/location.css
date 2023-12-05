@@ -201,3 +201,6 @@ input{
     display: none;
 }
 
+footer {
+    bottom: 0px;
+}
