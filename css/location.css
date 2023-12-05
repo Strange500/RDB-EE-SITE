@@ -141,7 +141,7 @@ datalist {
     justify-content: space-between;
     writing-mode: vertical-lr;
     width: 200px;
-    padding-left: 45px;
+    padding-left: 12px;
     font-size: 10px;
 }
 option {

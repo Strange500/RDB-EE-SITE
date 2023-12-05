@@ -1,5 +1,5 @@
 body{
-    background-color: #EBEBF0;
+    background-color: white;
 }
 
 .main {
@@ -8,9 +8,9 @@ body{
     width: 70%;
     margin-left: 12%;
     padding: 3%;
-    background-color: rgba(226, 226, 226, 0.315);
-    border: 1px solid white;
+    border: 1px solid lightskyblue;
     border-radius: 10px;
+    background-color: #EBEBF0;
 }
 form{
     background-color: #F0F0F5;
@@ -41,4 +41,20 @@ input[type="submit"]:hover{
 }
 .bold {
     font-weight: bold;font-size: large;
+}
+
+.presentation {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+h2.presentation {
+    padding-bottom: 30px;
+    font-size: 40px;
+}
+
+p.presentation {
+    padding-bottom: 50px;
 }
