@@ -46,7 +46,6 @@ input[type="submit"]:hover{
 .presentation {
     display: flex;
     justify-content: center;
-    font-weight: bold;
     font-size: 23px;
 }
 
