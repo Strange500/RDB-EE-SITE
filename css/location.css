@@ -16,11 +16,10 @@ form{
 .caracteristique_container {
     display: grid;
     grid-template-columns: repeat(4, 24%);
-    grid-template-rows: 1fr .5fr;
+    grid-template-rows: 1fr;
     grid-column-gap: 1%;
     grid-row-gap: 0px;
     grid-area: caracteristique;
-    background-color: #F0F0F5;
 }
 .distance_container{
     padding: 10px;
@@ -84,7 +83,7 @@ form{
     align-items: center;
     justify-content: space-between;
     padding: 30px;
-    background-color: #F0F0F5;
+    background-color: #F0F0F5; 
 }
 .voiture_elec_container{
     display: grid;
