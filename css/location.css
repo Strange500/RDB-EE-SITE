@@ -15,7 +15,7 @@ form{
 }
 .caracteristique_container {
     display: grid;
-    grid-template-columns: repeat(4, 24%);
+    grid-template-columns: repeat(5, 19%);
     grid-template-rows: 1fr;
     grid-column-gap: 1%;
     grid-row-gap: 0px;
@@ -39,6 +39,15 @@ form{
     display: flex;
 }
 .date_container{
+    padding: 20px;
+    text-align: center;
+    border : solid lightskyblue 1px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+.heure_container{
     padding: 20px;
     text-align: center;
     border : solid lightskyblue 1px;
