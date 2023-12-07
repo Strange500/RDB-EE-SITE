@@ -70,3 +70,6 @@ footer {
     justify-content: center;
     padding: 10px;
 }
+input[type="submit"]:hover{
+    cursor: pointer;
+}
