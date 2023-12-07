@@ -54,3 +54,7 @@ footer {
     position: absolute;
     bottom: 0px;
 }
+
+a > p {
+    margin-top: 15px;
+}
