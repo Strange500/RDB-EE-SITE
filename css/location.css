@@ -204,3 +204,8 @@ input{
 footer {
     bottom: 0px;
 }
+
+.desc {
+    display: flex;
+    flex-direction: column;
+}
