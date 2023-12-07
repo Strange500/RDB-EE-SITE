@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservation</title>
+    <title>Inscription</title>
     <link rel="stylesheet" href="css/menue.css">
-    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="css/signin.css">
+    <link rel="icon" type="images/x-icon" href="./img/logo.png" />
+    
 </head>
 <body>
     <nav>
@@ -18,38 +20,17 @@
         </ul>
     </nav>
 
-    <select name="test" id="test">
-        <option value="velo">velo</option>
-    </select>
-
     <div class="main">
-        <form action="index.html">
-
-            <div class="container">
-                <label for="nom">Nom: </label>
-                <input type="text">
-            </div>
-            <div class="container">
-                <label for="Prenom">Prenom: </label>
-                <input type="text">
-            </div>
-            <div class="container">
-                <label for="age">Age: </label>
-                <input type="number">
-            </div>
-            <div class="container">
-                <label for="adresse" >Adresse: </label>
-                <input type="text" placeholder="n° rue ville code postal">
-            </div>
-            <div class="container">
-                <label for="mail">E-mail: </label>
-                <input type="mail" placeholder="example@example.com">
-            </div>
-
-            <input type="submit" value="S'inscrire">
-            
-            
+        <h2>Inscription</h2>
+        <h3>Rentrez vos identifiants</h3>
+        <form class="login" action="index.html">
+            <input type="mail" placeholder="example@example.com">
+            <input type="password" name="password" id="password" placeholder="Mot de passe">
+            <input type="text" placeholder="ville">
+            <input type="number" placeholder="code postal">
+            <input type="submit" value="inscription">
         </form>
+        <a href="login.html"><p>Se connecter</p></a>
     </div>
     <footer><small>veillez à respecter les <a href="conditions.html">conditions d'utilisation</a> du site avant de proposer votre vehicule pour location, contactez nous <a href="contact.html">ici</a></small></footer>
 </body>
