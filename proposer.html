@@ -6,6 +6,7 @@
     <title>Proposer</title>
     <link rel="stylesheet" href="css/menue.css">
     <link rel="stylesheet" href="css/proposer.css">
+    <link rel="icon" type="images/x-icon" href="./img/logo.png" />
     
 </head>
 <body>
@@ -27,27 +28,27 @@
                 
                 <div class="calendar_container container">
                     <label for="calendar">Quelle date</label>
-                    <input type="date" name="calendar" id="calendar">
+                    <input type="date" name="calendar" id="calendar" required>
                 </div>
                 
                 <div class="heure_container container">
                     <label for="heure">Quelle heure</label>
-                    <input type="time" name="heure" id="heure">
+                    <input type="time" name="heure" id="heure" required>
                 </div>
                 
                 <div class="depart_container container">
                     <label for="depart">Quelle ville</label>
-                    <input type="text" name="depart" id="depart">
+                    <input type="text" name="depart" id="depart" required>
                 </div>
                 
                 <div class="prix_container container">
                     <label for="prix">Quelle ville</label>
-                    <input type="number" name="prix" id="prix" placeholder="Prix en €">
+                    <input type="number" name="prix" id="prix" placeholder="Prix en €" required>
                 </div>
                 
                 <div class="type_container container">
                     <label for="type_vehicule">Type de vehicule</label>
-                    <select name="type_vehicule" id="type_vehicule" >
+                    <select name="type_vehicule" id="type_vehicule" required>
                         <option value="0" disabled selected hidden>- Séléctionner -</option>
                         <option value="trotinette">Trotinette</option>
                         <option value="velo">Velo</option>
@@ -58,7 +59,7 @@
 
                 <div class="img_container container">
                     <label for="img_voiture">Une photo de votre vehicule</label>
-                    <input type="file" name="img" id="img">
+                    <input type="file" name="img" id="img" required>
                 </div>
 
 
