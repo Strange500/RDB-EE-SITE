@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="UTF-8" />
-    <title>Contacte</title>
-    <meta name="author" content="Dehaine Alexandre" />
-    <link rel="icon" type="images/x-icon" href="./img/logo.png" />
-    <link rel="stylesheet" href="./css/contact.css" />
+    <meta charset="UTF-8" >
+    <title>Contact</title>
+    <link rel="icon" type="images/x-icon" href="./img/logo.png" >
+    <link rel="stylesheet" href="./css/contact.css" >
     <link rel="stylesheet" href="css/menue.css">
   </head>
 
@@ -20,66 +19,57 @@
       </ul>
     </nav>
 
-    <main>
-
-      <form method="post" action="#">
+    <div class="main">
+      <form action="#">
         <fieldset class="info">
           <legend>Informations sur vous</legend>
-
           <label>Genre:</label>
-          <input type="radio" name="genre" id="femme" />
+          <input type="radio" name="genre" id="femme" required>
           <label for="femme">Femme</label>
-          <input type="radio" name="genre" id="homme" />
+          <input type="radio" name="genre" id="homme" required>
           <label for="homme">Homme</label>
-          <input type="radio" name="genre" id="autre" />
+          <input type="radio" name="genre" id="autre" required>
           <label for="autre">Autre</label>
 
-          <br /><br />
+          <br ><br >
 
           <label for="nom">Nom :</label>
-          <input type="text" name="nom" id="nom" placeholder="Votre nom" />
-          <br /><br />
+          <input type="text" name="nom" id="nom" placeholder="Votre nom" required>
+          <br ><br >
 
           <label for="prenom">Prénom :</label>
-          <input type="text" name="prenom" id="prenom" placeholder="Votre prénom" />
-          <br /><br />
+          <input type="text" name="prenom" id="prenom" placeholder="Votre prénom" required>
+          <br ><br >
 
           <label for="courriel">Courriel : </label>
-          <input type="email" name="courriel" id="courriel" placeholder="Votre adresse Mail" />
+          <input type="email" name="courriel" id="courriel" placeholder="Votre adresse Mail" required>
         </fieldset>
 
         <fieldset class="demande">
           <legend>Votre demande</legend>
-
           <label for="objet">Objet du message :</label>
-          <select id="objet" name="objet">
-            <option value="0">- Séléctionner -</option>
+          <select id="objet" name="objet" required>
+            <option value="0" disabled selected hidden>- Séléctionner -</option>
             <option value="sugg">Suggestions</option>
             <option value="recl">Reclamations</option>
             <option value="insc">Insciption</option>
             <option value="prob">Problèmes techniques</option>
           </select>
-          <br /><br />
+          <br ><br >
 
-          <label for="description">Message :</label> <br />
-          <textarea
-            rows="10"
-            cols="50"
-            name="description"
-            id="description"
-            placeholder="Laisse parler ton âme d'artiste !"
-          ></textarea>
-          <br /><br />
+          <label for="description">Message :</label> <br >
+          <textarea rows="10" cols="50" name="description" id="description" placeholder="Detaillez votre problème" required></textarea>
+          <br ><br >
 
           <label for="document">Document:</label>
-          <input type="file" id="document" name="document" />
-          <br /><br />
+          <input type="file" id="document" name="document" >
+          <br ><br >
 
-          <input type="submit" name="Envoyer" id="soumission" value="Envoyer" />
-          <input type="reset" />
+          <input type="reset" >
+          <input type="submit" name="Envoyer" id="soumission" value="Envoyer" >
         </fieldset>
       </form>
-    </main>
-    <footer><small>veillez à respecter les <a href="conditions.html">conditions d'utilisation</a> du site avant de proposer votre vehicule pour location</small></footer>
+    </div class="main">
+    <footer><small>veillez à respecter les <a href="conditions.html">conditions d'utilisation</a> du site avant de proposer votre vehicule pour location, contactez nous <a href="contact.html">ici</a></small></footer>
   </body>
 </html>
