@@ -1,5 +1,5 @@
 body{
-    background-color: white;
+    background-image: url("../img/nature.png");
 }
 
 .main {
@@ -9,8 +9,9 @@ body{
     margin-left: 12%;
     padding: 3%;
     border: 1px solid lightskyblue;
-    border-radius: 10px;
-    background-color: #EBEBF0;
+    border-radius: 20px;
+    backdrop-filter: blur(7px);
+    background: rgba(255, 255, 255, 0.5);
 }
 form{
     background-color: #F0F0F5;
@@ -73,8 +74,13 @@ table {
     border-style: solid;
     border-radius: 50px;
     border-color: lightskyblue;
+    padding: 10px;
 }
 
 table th {
     font-size: 30px;
+}
+
+footer {
+    font-weight: bold;
 }

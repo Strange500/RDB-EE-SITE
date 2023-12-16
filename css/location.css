@@ -1,5 +1,5 @@
 body{
-    background-color: #EBEBF0;
+    background-image: url("../img/nature.png");
 }
 form{
     display: grid;
@@ -13,6 +13,7 @@ form{
                          ". voiture_hydro ."
                          ". velo .";                  
 }
+
 .caracteristique_container {
     display: grid;
     grid-template-columns: repeat(5, 19%);
@@ -27,6 +28,8 @@ form{
     border : solid lightskyblue 1px ; 
     align-items: center;
     justify-content: space-between;
+    backdrop-filter: blur(7px);
+    background: rgba(255, 255, 255, 0.5);
 }
 .permit_container{
     padding: 10px;
@@ -37,6 +40,8 @@ form{
     align-items: center;
     justify-content: space-between;
     display: flex;
+    backdrop-filter: blur(7px);
+    background: rgba(255, 255, 255, 0.5);
 }
 .date_container{
     padding: 20px;
@@ -46,6 +51,8 @@ form{
     justify-content: space-between;
     display: flex;
     flex-direction: column;
+    backdrop-filter: blur(7px);
+    background: rgba(255, 255, 255, 0.5);
 }
 .heure_container{
     padding: 20px;
@@ -55,6 +62,8 @@ form{
     justify-content: space-between;
     display: flex;
     flex-direction: column;
+    backdrop-filter: blur(7px);
+    background: rgba(255, 255, 255, 0.5);
 }
 .depart_container{
     display: flex;
@@ -65,6 +74,8 @@ form{
     align-items: center;
     justify-content: space-between;
     display: flex;
+    backdrop-filter: blur(7px);
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .selection_container {
@@ -92,7 +103,8 @@ form{
     align-items: center;
     justify-content: space-between;
     padding: 30px;
-    background-color: #F0F0F5; 
+    backdrop-filter: blur(7px);
+    background: rgba(255, 255, 255, 0.5);
 }
 .voiture_elec_container{
     display: grid;
@@ -104,7 +116,8 @@ form{
     align-items: center;
     justify-content: space-between;
     padding: 30px;
-    background-color: #F0F0F5;
+    backdrop-filter: blur(7px);
+    background: rgba(255, 255, 255, 0.5);
 }
 .voiture_hydro_container{
     display: grid;
@@ -116,7 +129,8 @@ form{
     align-items: center;
     justify-content: space-between;
     padding: 30px;
-    background-color: #F0F0F5;
+    backdrop-filter: blur(7px);
+    background: rgba(255, 255, 255, 0.5);
 }
 .velo_container{
     display: grid;
@@ -128,7 +142,8 @@ form{
     align-items: center;
     justify-content: space-between;
     padding: 30px;
-    background-color: #F0F0F5;
+    backdrop-filter: blur(7px);
+    background: rgba(255, 255, 255, 0.5);
 }
 .item_img {
     width: 10%;

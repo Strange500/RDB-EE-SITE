@@ -67,9 +67,11 @@ nav>ul>li>a{
 }
 
 footer {
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding: 20px;
+    font-size: 20px;
 }
 
 input:hover{

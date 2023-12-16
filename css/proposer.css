@@ -9,7 +9,7 @@ body{
 }
 html,body{
     height: 100%;
-    background-color: #EBEBF0;
+    background-image: url("../img/nature.png");
     
 }
 a, button{
@@ -23,6 +23,8 @@ a, button{
     background-color: #F0F0F5;
     border: 1px solid lightskyblue;
     text-align: center;
+    backdrop-filter: blur(7px);
+    background: rgba(255, 255, 255, 0.5);
 }
 form{
     display: flex;
