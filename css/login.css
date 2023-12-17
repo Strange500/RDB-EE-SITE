@@ -9,7 +9,7 @@ body{
 }
 html,body{
     height: 100%;
-    background-color: #EBEBF0;
+    background-image: url(../img/nature.png);
     
 }
 
@@ -18,8 +18,8 @@ html,body{
     width: 50%;
     padding: 70px 30px 44px;
     border-radius: 24px;
-    background-color: #F0F0F5;
-
+    backdrop-filter: blur(7px);
+    background: rgba(255, 255, 255, 0.5);
     text-align: center;
     top: 55px;
 }
