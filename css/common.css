@@ -1,6 +1,7 @@
 body{
     background-image: url("../img/nature.png");
     background-attachment: fixed;
+    background-size: cover;
 }
 
 .main {
