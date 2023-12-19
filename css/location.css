@@ -1,6 +1,4 @@
-body{
-    background-image: url("../img/nature.png");
-}
+
 form{
     display: grid;
     grid-template-columns: 15% 1fr 15%;
@@ -14,6 +12,12 @@ form{
                          ". velo .";                  
 }
 
+.filter_item {
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
 .caracteristique_container {
     display: grid;
     grid-template-columns: repeat(5, 19%);
@@ -22,72 +26,35 @@ form{
     grid-row-gap: 0px;
     grid-area: caracteristique;
 }
-.distance_container{
+/* .distance_container{
     padding: 10px;
     text-align: center;
-    border : solid lightskyblue 1px ; 
     align-items: center;
     justify-content: space-between;
-    backdrop-filter: blur(7px);
-    background: rgba(255, 255, 255, 0.5);
-}
+} */
 .permit_container{
-    padding: 10px;
     padding-left: 40px;
     padding-right: 40px;
-    text-align: center;
-    border : solid lightskyblue 1px;
-    align-items: center;
-    justify-content: space-between;
     display: flex;
-    backdrop-filter: blur(7px);
-    background: rgba(255, 255, 255, 0.5);
 }
 .date_container{
     padding: 20px;
-    text-align: center;
-    border : solid lightskyblue 1px;
-    align-items: center;
-    justify-content: space-between;
     display: flex;
     flex-direction: column;
-    backdrop-filter: blur(7px);
-    background: rgba(255, 255, 255, 0.5);
 }
 .heure_container{
     padding: 20px;
-    text-align: center;
-    border : solid lightskyblue 1px;
-    align-items: center;
-    justify-content: space-between;
     display: flex;
     flex-direction: column;
-    backdrop-filter: blur(7px);
-    background: rgba(255, 255, 255, 0.5);
 }
 .depart_container{
     display: flex;
     flex-direction: column;
     padding: 20px;
-    text-align: center;
-    border : solid lightskyblue 1px;   
-    align-items: center;
-    justify-content: space-between;
     display: flex;
-    backdrop-filter: blur(7px);
-    background: rgba(255, 255, 255, 0.5);
 }
 
-.selection_container {
-    border: 1px solid lightskyblue;
-    margin-top: 10px;
-    grid-column-start: 1;
-    grid-column-end: 6;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-}
+
 
 .selection_container_check_container {
     display: flex;
@@ -244,5 +211,7 @@ input[name="choice"]:focus ~ label  {
 }
 input[name="choice"]  {
     height: 0px;
+    position: absolute;
+    top: -1500px;
 
 }

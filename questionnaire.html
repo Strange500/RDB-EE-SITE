@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/menue.css">
     <link rel="stylesheet" href="css/questionnaire.css">
+    <link rel="stylesheet" href="css/common.css">
 </head>
 <body>
     <nav>
@@ -14,10 +15,11 @@
             <li><a href="index.html" class="menue_item">Accueil</a></li>
             <li><a href="location.html" class="menue_item" >Location</a></li>
             <li><a href="proposer.html" class="menue_item" >Proposer</a></li>
+            <li><a href="reservation.html" class="menue_item" >Mes Réservations</a></li>
             <li><a href="login.html"><img src="img/account.png" alt="Account" class="login_icon"></a></li>
         </ul>
     </nav>
-    <form action="signin.html" >
+    <form action="signin.html" class="container" >
         <label class="bold" for="question1">Quel est le principal moyen de transport que vous utilisez pour vous rendre au travail ?</label><br>
         <div>
         <input type="radio" id="option1" name="question1" value="Option 1" required>
@@ -98,6 +100,6 @@
         <br>
         <input type="submit" value="Envoyer">
     </form>
-    <footer><small>Veillez à respecter les <a href="conditions.html">conditions d'utilisation</a> du site avant de louer votre véhicule, contactez nous <a href="contact.html">ici</a></small></footer>
+    <footer class="container"><small>Veillez à respecter les <a href="conditions.html">conditions d'utilisation</a> du site avant de louer votre véhicule, contactez nous <a href="contact.html">ici</a></small></footer>
 </body>
 </html>

@@ -6,6 +6,8 @@ body {
 .main {
     display: flex;
     justify-content: center;
+    padding: 10px;
+    text-align: left;
 }
 
 h1 {
@@ -14,10 +16,7 @@ h1 {
     font-size: 20px;
 }
 
-ol > li {
-    font-weight: bold;
-}
 
-ol > ul {
+ol > li > ul {
     list-style-type: upper-roman;
 }

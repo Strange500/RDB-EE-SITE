@@ -1,0 +1,14 @@
+body{
+    background-image: url("../img/nature.png");
+    background-attachment: fixed;
+}
+
+.main {
+    margin-bottom: 3%;
+}
+.container {
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid lightskyblue;
+    border-radius: 20px;
+    backdrop-filter: blur(7px);
+}

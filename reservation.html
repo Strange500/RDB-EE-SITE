@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservation</title>
-    <link rel="stylesheet" href="css/location.css">
+    <title>Réservation</title>
+    <link rel="stylesheet" href="css/reservation.css">
     <link rel="stylesheet" href="css/menue.css">
     <link rel="icon" type="images/x-icon" href="./img/logo.png" />
+    <link rel="stylesheet" href="css/common.css">
 </head>
 <body>
     <nav>
@@ -15,93 +16,58 @@
             <li><a href="index.html" class="menue_item">Accueil</a></li>
             <li><a href="location.html" class="menue_item" >Location</a></li>
             <li><a href="proposer.html" class="menue_item" >Proposer</a></li>
+            <li><a href="reservation.html" class="menue_item" >Mes Réservations</a></li>
             <li><a href="login.html"><img src="img/account.png" alt="Account" class="login_icon"></a></li>
         </ul>
     </nav>
 
-    <select name="test" id="test">
-        <option value="velo">velo</option>
-    </select>
+    <div class="main container">
 
-    <div class="main">
-        <form action="reusite.html">
+        <h1>Liste de vos réservations</h1>
+        
+        <input type="checkbox" name="test" id="anulation1" class="annulation">
+        <label for="anulation1"><a class="annulation_btn"><img class="poubelle" src="img/poubelle.svg" alt=""></a></label>
+        <div class="reservation_container container">
+            <img src="img/velo3.jpg" alt="velo3" class="vehicule_img">
+            <p>Nom du véhicule: <br><strong>Nova</strong></p>
+            <p>Type de véhicule: <br><strong>Vélo</strong></p>
+            <p>Tarif au jour: <br><strong>8€/jour</strong></p>
+            <p>Reserver pour le <br> <strong>11/08/2024 à 8h00</strong></p>
+        </div>
+        
 
-            
-            
-            <div class="trotinette_container container">
-                <div class="item_container">
-                    <input type="radio" name="choice" value="1" required>
-                    <img src="img/trot1-min.jpg" alt="Trot1" class="item_img">
-                    <p>SpeedTrott</p>
-                </div>
-                <div class="item_container">
-                    <input type="radio" name="choice" value="2">
-                    <img src="img/trot2-min.jpg" alt="Trot2" class="item_img">
-                    <p>Etwow</p>                </div>
-                <div class="item_container">
-                    <input type="radio" name="choice" value="3">
-                    <img src="img/trot3-min.jpg" alt="Trot3" class="item_img">
-                    <p>Dualtron</p>                </div>
-            </div>
+        <input type="checkbox" name="test" id="anulation2" class="annulation">
+        <label for="anulation2"><a class="annulation_btn"><img class="poubelle" src="img/poubelle.svg" alt=""></a></label>
+        <div class="reservation_container container">
+            <img src="img/voit1-min.jpg" alt="velo3" class="vehicule_img">
+            <p>Nom du véhicule: <br><strong>Volvo Xc90</strong></p>
+            <p>Type de véhicule: <br><strong>Voiture</strong></p>
+            <p>Tarif au jour: <br><strong>80€/jour</strong></p>
+            <p>Reserver pour le <br> <strong>12/08/2024 à 8h00</strong></p>
+        </div>
 
-            <div class="voiture_elec_container container">
-                <div class="item_container">
-                    <input type="radio" name="choice" value="4">
-                    <img src="img/voit1-min.jpg" alt="voit1" class="item_img">
-                    <p>voiture_elec1</p>
-                </div>
-                <div class="item_container">
-                    <input type="radio" name="choice" value="5">
-                    <img src="img/voit2-min.jpg" alt="voit2" class="item_img">
-                    <p>voiture_elec2</p>                    
-                </div>
-                <div class="item_container">
-                    <input type="radio" name="choice" value="6">
-                    <img src="img/voit3-min.jpg" alt="voit3" class="item_img">
-                    <p>voiture_elec3</p>                    
-                </div>
-            </div>
+        <input type="checkbox" name="test" id="anulation3" class="annulation">
+        <label for="anulation3"><a class="annulation_btn"><img class="poubelle" src="img/poubelle.svg" alt=""></a></label>
+        <div class="reservation_container container">
+            <img src="img/voithyd3.jpg" alt="velo3" class="vehicule_img">
+            <p>Nom du véhicule: <br><strong>Alpine a110 Hydrogène</strong></p>
+            <p>Type de véhicule: <br><strong>Voiture Hydrogéne</strong></p>
+            <p>Tarif au jour: <br><strong>90€/jour</strong></p>
+            <p>Reserver pour le <br> <strong>13/08/2024 à 8h00</strong></p>
+        </div>
 
-            <div class="voiture_hydro_container container">
-                <div class="item_container">
-                    <input type="radio" name="choice" value="7">
-                    <img src="img/voithyd1.jpg" alt="voithyd1" class="item_img">
-                    <p>voiture_hydro1</p>                    
-                </div>
-                <div class="item_container">
-                    <input type="radio" name="choice" value="8">
-                    <img src="img/voithyd2.jpg" alt="voithyd2" class="item_img">
-                    <p>voiture_hydro2</p>                    
-                </div>
-                <div class="item_container">
-                    <input type="radio" name="choice" value="9">
-                    <img src="img/voithyd3.jpg" alt="voithyd4" class="item_img">
-                    <p>voiture_hydro3</p>                    
-                </div>
-            </div>
-
-            <div class="velo_container container">
-                <div class="item_container">
-                    <input type="radio" name="choice" value="10">
-                    <img src="img/velo1.jpg" alt="velo1" class="item_img">
-                    <p>Aerion</p>                    
-                </div>
-                <div class="item_container" >
-                    <input type="radio" name="choice" value="11">
-                    <img src="img/velo2.jpg" alt="velo2" class="item_img">
-                    <p>Cyclone</p>                    
-                </div>
-                <div class="item_container">
-                    <input type="radio" name="choice" value="12">
-                    <img src="img/velo3.jpg" alt="velo3" class="item_img">
-                    <p>Nova</p>                    
-                </div>
-            </div>
-            <div class="submit_container">
-                <input type="submit" value="Louer !">
-            </div>
-        </form>
+        <input type="checkbox" name="test" id="anulation4" class="annulation">
+        <label for="anulation4"><a class="annulation_btn"><img class="poubelle" src="img/poubelle.svg" alt=""></a></label>
+        <div class="reservation_container container">
+            <img src="img/trot1-min.jpg" alt="velo3" class="vehicule_img">
+            <p>Nom du véhicule: <br><strong>SpeedTrott</strong></p>
+            <p>Type de véhicule: <br><strong>Trotinette</strong></p>
+            <p>Tarif au jour: <br><strong>8€/jour</strong></p>
+            <p>Reserver pour le <br> <strong>14/08/2024 à 8h00</strong></p>
+        </div>
     </div>
-    <footer><small>Veillez à respecter les <a href="conditions.html">conditions d'utilisation</a> du site avant de louer votre véhicule, contactez nous <a href="contact.html">ici</a></small></footer>
+
+    
+    <footer class="container"><small>Veillez à respecter les <a href="conditions.html">conditions d'utilisation</a> du site avant de louer votre véhicule, contactez nous <a href="contact.html">ici</a></small></footer>
 </body>
 </html>

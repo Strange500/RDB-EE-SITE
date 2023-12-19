@@ -9,31 +9,30 @@ body{
 }
 html,body{
     height: 100%;
-    background-image: url("../img/nature.png");
     
 }
 a, button{
     cursor: pointer;
 }
 .main{
-    position: absolute;
     width: 50%;
     padding: 70px 30px 44px;
     border-radius: 24px;
-    background-color: #F0F0F5;
-    border: 1px solid lightskyblue;
     text-align: center;
-    backdrop-filter: blur(7px);
-    background: rgba(255, 255, 255, 0.5);
 }
 form{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.container{
-    margin-bottom: 30px;
-    
+.container_input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
 }
 footer {
     position: absolute;
