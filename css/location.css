@@ -168,7 +168,7 @@ input[type="range"] {
     margin: 0;
 }
   
-.item_container>img{
+.item_container img{
     width: 35%;
     height: 35%;
     border-radius: 20px;
@@ -220,7 +220,29 @@ footer {
     bottom: 0px;
 }
 
-.desc {
+.item_container label {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.item_container label {
+    transition: .1s;
+}
+.item_container label:hover {
+    background-color: rgba(226, 226, 226, 0.315);
+    transition: .2s;
+}
+
+input[name="choice"]:focus ~ label  {
+    border: 5px solid skyblue;
+    border-radius: 3%;
+    background-color: rgba(226, 226, 226, 0.5);
+    transition: .1s;
+
+}
+input[name="choice"]  {
+    height: 0px;
+
 }
