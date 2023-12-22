@@ -34,10 +34,7 @@ form{
     margin-bottom: 20px;
     padding-bottom: 10px;
 }
-footer {
-    position: absolute;
-    bottom: 0px;
-}
+
 input[type="submit"]{
     background-color: #216CE7;
     border: 1px solid #216CE7;
