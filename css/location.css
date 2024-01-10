@@ -124,6 +124,20 @@ form{
     backdrop-filter: blur(7px);
     background: rgba(255, 255, 255, 0.5);
 }
+
+.covoit_container {
+    display: none;
+    grid-template-columns: repeat(3, 28%);
+    grid-template-rows: auto;
+    grid-column-gap: 5%;
+    border : solid lightskyblue 1px;
+    grid-area: velo;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    backdrop-filter: blur(7px);
+    background: rgba(255, 255, 255, 0.5);
+}
 .item_img {
     width: 10%;
     height: 10%;
@@ -229,7 +243,7 @@ input[name="choice"]  {
 
 }
 
-#velo:checked ~ .velo_container, #voiture_elec:checked ~ .voiture_elec_container, #voiture_hydro:checked ~ .voiture_hydro_container, #trotinette:checked ~ .trotinette_container {
+#velo:checked ~ .velo_container, #voiture_elec:checked ~ .voiture_elec_container, #voiture_hydro:checked ~ .voiture_hydro_container, #trotinette:checked ~ .trotinette_container, #covoit:checked ~ .covoit_container {
     display: grid;
 }
 
@@ -280,12 +294,23 @@ input[name="choice"]  {
     top: 47vh;
     left: 13vh;
 }
+#covoit {
+    position: fixed;
+    top: 50.5vh;
+    left: 10vh;
+}
+
+#label_covoit {
+    position: fixed;
+    top: 50vh;
+    left: 13vh;
+}
 
 #container_selection {
     position: fixed;
     top: 35vh;
     left: 9vh;
-    height: 15vh;
+    height: 17vh;
     width: 10vw;
 
 }
